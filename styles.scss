@@ -1,0 +1,82 @@
+@import '_zindex.scss';
+
+#main {
+	position: relative;
+	width: 220px;
+	margin: 0 auto;
+	.block {
+		height: 250px;
+		background: linear-gradient(125deg,#0000ff,#ffff00);
+		width: 200px;
+		float:left;
+		margin:10px;
+		border: 2px solid #000;
+		border-radius: 10px;
+		position: absolute;
+		left:0;
+		top:0;
+		/* z-index: 5; */
+		z-index: index($blocks, blockFive);
+		&:nth-child(2) { 
+			background: linear-gradient(125deg,#ff0000,#00ffff);
+			position: absolute;
+			left:20px;
+			top:20px;
+			/* z-index: 7; */
+			z-index: index($blocks, blockSeven);
+		}
+		&:nth-child(3) { 
+			background: linear-gradient(125deg,#009933,#003399);
+			position: absolute;
+			left:40px;
+			top:40px;
+			/* z-index: 9; */
+			z-index: index($blocks, blockNine);
+		}
+		&:nth-child(4) { 
+			background: linear-gradient(125deg,#cc00ff,#ffcc00);
+			position: absolute;
+			left:60px;
+			top:60px;
+			/* z-index: 8; */
+			z-index: index($blocks, blockEight);
+		}
+		&:nth-child(5) { 
+			background: linear-gradient(125deg,#666666,#e3e3e3);
+			position: absolute;
+			left:80px;
+			top:80px;
+			/* z-index: 6;*/
+			z-index: index($blocks, blockSix);
+		}
+		&:nth-child(6) { 
+			background: linear-gradient(65deg,#660000,#006666);
+			position: absolute;
+			left:80px;
+			top:0;
+			/* z-index: 1; */
+			z-index: index($blocks, blockOne);
+		}&:nth-child(7) { 
+			background: linear-gradient(65deg,#66ffff,#ffff66);
+			position: absolute;
+			left:60px;
+			top:20px;
+			/* z-index: 2; */
+			z-index: index($blocks, blockTwo);
+		}&:nth-child(8) { 
+			background: linear-gradient(65deg,#0099ff,#00ff99);
+			position: absolute;
+			left:20px;
+			top:60px;
+			/* z-index: 4; */
+			z-index: index($blocks, blockFour);
+		}&:nth-child(9) { 
+			background: linear-gradient(65deg,#ff0000,#00ff00);
+			position: absolute;
+			left:0px;
+			top:80px;
+			/* z-index: 3; */
+			z-index: index($blocks, blockThree);
+		}
+	}
+}

@@ -1,0 +1,93 @@
+/* line 3, styles.scss */
+#main {
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+}
+/* line 7, styles.scss */
+#main .block {
+  height: 250px;
+  background: linear-gradient(125deg, #0000ff, #ffff00);
+  width: 200px;
+  float: left;
+  margin: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* z-index: 5; */
+  z-index: 5;
+}
+/* line 20, styles.scss */
+#main .block:nth-child(2) {
+  background: linear-gradient(125deg, #ff0000, #00ffff);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  /* z-index: 7; */
+  z-index: 7;
+}
+/* line 28, styles.scss */
+#main .block:nth-child(3) {
+  background: linear-gradient(125deg, #009933, #003399);
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  /* z-index: 9; */
+  z-index: 9;
+}
+/* line 36, styles.scss */
+#main .block:nth-child(4) {
+  background: linear-gradient(125deg, #cc00ff, #ffcc00);
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  /* z-index: 8; */
+  z-index: 8;
+}
+/* line 44, styles.scss */
+#main .block:nth-child(5) {
+  background: linear-gradient(125deg, #666666, #e3e3e3);
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  /* z-index: 6;*/
+  z-index: 6;
+}
+/* line 52, styles.scss */
+#main .block:nth-child(6) {
+  background: linear-gradient(65deg, #660000, #006666);
+  position: absolute;
+  left: 80px;
+  top: 0;
+  /* z-index: 1; */
+  z-index: 1;
+}
+/* line 59, styles.scss */
+#main .block:nth-child(7) {
+  background: linear-gradient(65deg, #66ffff, #ffff66);
+  position: absolute;
+  left: 60px;
+  top: 20px;
+  /* z-index: 2; */
+  z-index: 2;
+}
+/* line 66, styles.scss */
+#main .block:nth-child(8) {
+  background: linear-gradient(65deg, #0099ff, #00ff99);
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  /* z-index: 4; */
+  z-index: 4;
+}
+/* line 73, styles.scss */
+#main .block:nth-child(9) {
+  background: linear-gradient(65deg, #ff0000, #00ff00);
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  /* z-index: 3; */
+  z-index: 3;
+}
